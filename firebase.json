@@ -1,0 +1,41 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "clothingstore-a6007",
+          "appId": "1:752510112603:android:2cad2f7e46a104ad9cc07e",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "clothingstore-a6007",
+          "configurations": {
+            "android": "1:752510112603:android:2cad2f7e46a104ad9cc07e",
+            "ios": "1:752510112603:ios:b4a9fdc863d286219cc07e",
+            "macos": "1:752510112603:ios:b4a9fdc863d286219cc07e",
+            "web": "1:752510112603:web:b8727c6b574615469cc07e",
+            "windows": "1:752510112603:web:3a463886edffb8509cc07e"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
